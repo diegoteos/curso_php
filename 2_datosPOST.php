@@ -30,7 +30,7 @@ else {
         <title>Mi formulario</title>
     </head>
     <body>
-        <form action="2datosPOST.php" method="post">
+        <form action="2_datosPOST.php" method="post">
             <input type="text" name="nombre" id="Nom" placeholder="Nombre" >
             <input type="text" name="apellido" id="Ape" placeholder="Apellido" > 
             <input type="email" name="correo" id=""placeholder="Correo" >
