@@ -12,9 +12,4 @@ echo 'echo vs print: Ambos son constructores de lenguaje que muestran cadenas de
 
 echo 'echo puede imprimir mas de una cadena separadas por coma, mientras que print solo imprime una.<br><br />'
 
-
-
-
-
-
 ?>
