@@ -1,6 +1,6 @@
 <?php
 
-if($_POST){
+if($_POST){         // Verificamos si el POST tiene datos 
 
     $valorA = $_POST['valorA'];
     $valorB = $_POST['valorB'];
@@ -12,7 +12,6 @@ if($_POST){
     echo "la resta es: ".$resta."<br/>";
     echo "la division es: ".$division."<br/>";
     echo "la multiplicacion es: ".$multiplicacion."<br/>"."<br/>";
- 
     if($valorA ==$valorB)
         {
             echo "El valor de A es igual al de B<br/>";
@@ -21,8 +20,7 @@ if($_POST){
         echo "El valor de A no es igual al valor de B <br/>";
         if($valorA < $valorB){
             echo "El valor de A es menor que el de B<br/>";
-        }
-        
+        }     
     }
     if( ($valorA==$valorB) && ($valorA==4)){
         
