@@ -31,10 +31,10 @@ else {
     </head>
     <body>
         <form action="2datosPOST.php" method="post">
-            <input type="text" name="nombre" id="Nom" placeholder="hola" >
-            <input type="text" name="apellido" id="Ape" placeholder="apellido" > 
-            <input type="email" name="correo" id=""placeholder="correo" >
-            <input type="password" name="password" id="" placeholder="contraseña">
+            <input type="text" name="nombre" id="Nom" placeholder="Nombre" >
+            <input type="text" name="apellido" id="Ape" placeholder="Apellido" > 
+            <input type="email" name="correo" id=""placeholder="Correo" >
+            <input type="password" name="password" id="" placeholder="Contraseña">
             <input type="submit" value="Enviar">
         </form>
     </body>
