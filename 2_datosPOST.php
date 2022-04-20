@@ -9,10 +9,10 @@ if ($_POST){
     $correo = $_POST['correo'];
     $password = $_POST['password'];;
     if ($nombre == null || $apellido == null || $correo == null ) {
-        echo "Por favor llene los campos, no puede dejar esos campos vacios.";       
+        echo "Por favor llene todos los campos, no puede dejar campos vacios.";       
 } 
     else {
-        echo "tu nombre es: ".$nombre." y tu apellido: ".$apellido. " y tu correo: ".$correo;
+        echo "tu nombre es ".$nombre." y tu apellido ".$apellido. " este es tu correo: ".$correo ." bienvendidos<br />";
     } 
 }
 else {
@@ -30,7 +30,7 @@ else {
         <title>Mi formulario</title>
     </head>
     <body>
-        <form action="2_datosPOST.php" method="post">
+        <form action="2_datosPOST.php" method="post"><br/>
             <input type="text" name="nombre" id="Nom" placeholder="Nombre" >
             <input type="text" name="apellido" id="Ape" placeholder="Apellido" > 
             <input type="email" name="correo" id=""placeholder="Correo" >
