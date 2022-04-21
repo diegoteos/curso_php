@@ -10,8 +10,5 @@
     $minuscula = strtolower($mayuscula);
     echo $minuscula;
 
-
-
-
 ?>
 
