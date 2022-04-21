@@ -9,7 +9,7 @@
 <body>
     
     <form action="13_ciclo_for.php" method="post">
-<h3>Esta es su calculadora hecha en php</h3>
+<h3>Esta es tu calculadora hecha en php con switch y ciclos for</h3>
         <input type="submit" name="boton" value="1">
         <input type="submit" name="boton" value="2">
         <input type="submit" name="boton" value="3">
