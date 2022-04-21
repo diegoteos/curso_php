@@ -21,7 +21,8 @@ if ($_POST){
             echo 'Haciendo uso de switch: El  tercero<br><br/>';
             break;
         
-        default:
+            # SI NO DEFINO NINGUN OTRO VALOR O EXISTE OTRO DE LOS QUE NO AGREGUE MEDIANTE UN CASO, POR DEFECTO SE EJECUTA ESTA ACCION
+        default:     
             echo 'Haciendo uso de switch: No presiono ninguno<br/>';
             break;
     } 
@@ -62,7 +63,7 @@ if ($_POST){
     <input type="submit" name="btnValor" value="2">
     <br/>
     <input type="submit" name="btnValor" value="3">
-    
+
 </form>
 </body>
 </html>
