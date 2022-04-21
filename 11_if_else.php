@@ -7,11 +7,11 @@ if($_POST){
 
  if($valorA != $valorB){        // pregunta si A es diferente de B
 
-     echo "El valor A es diferente que el valor B";
+     echo 'El valor A es diferente que el valor B';
 
     }else{                      // en caso contrario se ejecuta el else
         
-        echo "El valor de A es igual al valor de B";
+        echo 'El valor de A es igual al valor de B';
 
     }
  }

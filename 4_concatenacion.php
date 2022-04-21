@@ -1,21 +1,21 @@
 <?php
 if($_POST){
     if($_POST['nombre'] == null){
-        echo "Debes de incluir tu nombre.";
+        echo 'Debes de incluir tu nombre.';
     }
     else if($_POST['apellido'] == null){
-        echo "Debes incluir tambien tu apellido.";
+        echo 'Debes incluir tambien tu apellido.';
     }
     
     else{
-        $nombre=$_POST["nombre"];
-        $apellido=$_POST["apellido"];
-        echo "Hola ".$nombre." ".$apellido; // Concatenacion con el uso de puntos
+        $nombre=$_POST['nombre'];
+        $apellido=$_POST['apellido'];
+        echo 'Hola '.$nombre." ".$apellido; // Concatenacion con el uso de puntos
     }
 }
     
     else{
-            echo "Envie sus datos.";
+            echo 'Envie sus datos.';
         }
 ?>
 

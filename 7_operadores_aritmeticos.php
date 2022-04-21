@@ -9,10 +9,10 @@ if($_POST){
     $resta = $valorA - $valorB;
     $division = $valorA / $valorB;
     $multiplicacion = $valorA * $valorB;
-    echo "la suma es: ".$suma."<br/>";
-    echo "la resta es: ".$resta."<br/>";
-    echo "la division es: ".$division."<br/>";
-    echo "la multiplicacion es: ".$multiplicacion."<br/>"."<br/>";   
+    echo 'la suma es: '.$suma.'<br/>';
+    echo 'la resta es: '.$resta.'<br/>';
+    echo 'la division es: '.$division.'<br/>';
+    echo 'la multiplicacion es: '.$multiplicacion.'<br/><br/>';   
 }
 ?>
 

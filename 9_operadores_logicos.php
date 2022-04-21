@@ -5,14 +5,17 @@ if($_POST){
     $valorA = $_POST['valorA'];
     $valorB = $_POST['valorB'];
 
+
+    # OPERADORES LOGICOS && ES UNA AND "ESTE Y ESTE" Y EL || ES UN OR "EL UNO O EL OTRO"
+    
  if(($valorA != $valorB) && ($valorA > $valorB)) {
-     echo "El valor A es diferente que el valor B y tambien es mayor";
+     echo 'El valor A es diferente que el valor B y tambien es mayor';
  }
  if($valorA == $valorB){
-     echo "El valor A es igual que el valor B";
+     echo 'El valor A es igual que el valor B';
  }
  if($valorA < $valorB){
-     echo "El valor A es menor que el valor B";
+     echo 'El valor A es menor que el valor B';
  }
 }
 ?>

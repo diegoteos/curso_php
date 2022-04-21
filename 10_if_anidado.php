@@ -8,23 +8,23 @@ if($_POST){         // Verificamos si el POST tiene datos
     $resta = $valorA - $valorB;
     $division = $valorA / $valorB;
     $multiplicacion = $valorA * $valorB;
-    echo "la suma es: ".$suma."<br/>";
-    echo "la resta es: ".$resta."<br/>";
-    echo "la division es: ".$division."<br/>";
-    echo "la multiplicacion es: ".$multiplicacion."<br/>"."<br/>";
+    echo 'la suma es: '.$suma.'<br/>';
+    echo 'la resta es: '.$resta.'<br/>';
+    echo 'la division es: '.$division.'<br/>';
+    echo 'la multiplicacion es: '.$multiplicacion.'<br/><br/>';
     if($valorA ==$valorB)
         {
-            echo "El valor de A es igual al de B<br/>";
+            echo 'El valor de A es igual al de B<br/>';
         }
     if ($valorA != $valorB) {
-        echo "El valor de A no es igual al valor de B <br/>";
+        echo 'El valor de A no es igual al valor de B <br/>';
         if($valorA < $valorB){                                          //ACA EL IF ANIDADO PORQUE ESTA DENTRO DE OTRO IF
-            echo "El valor de A es menor que el de B<br/>";
+            echo 'El valor de A es menor que el de B<br/>';
         }     
     }
     if( ($valorA==$valorB) && ($valorA==4)){
         
-        echo "El valor de A es igual a B y es un numero 4";
+        echo 'El valor de A es igual a B y es un numero 4';
     }
 }
 ?>

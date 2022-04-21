@@ -6,13 +6,13 @@ if($_POST){
     $valorB = $_POST['valorB'];
 
  if($valorA > $valorB){
-     echo "El valor A es mayor que el valor B";
+     echo 'El valor A es mayor que el valor B';
  }
  elseif($valorA == $valorB){
-     echo "El valor A es igual que el valor B";
+     echo 'El valor A es igual que el valor B';
  }
  else{
-     echo "El valor A es menor que el valor B";
+     echo 'El valor A es menor que el valor B';
  }
 }
 ?>

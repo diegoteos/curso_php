@@ -9,14 +9,14 @@ if ($_POST){
     $correo = $_POST['correo'];
     $password = $_POST['password'];;
     if ($nombre == null || $apellido == null || $correo == null ) {
-        echo "Por favor llene todos los campos, no puede dejar campos vacios.";       
+        echo 'Por favor llene todos los campos, no puede dejar campos vacios.';       
 } 
     else {
         echo "tu nombre es ".$nombre." y tu apellido ".$apellido. " este es tu correo: ".$correo ." bienvendidos<br />";
     } 
 }
 else {
-    echo "Por favor llene los campos...";
+    echo 'Por favor llene los campos...';
 }
 ?>
     

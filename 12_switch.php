@@ -40,8 +40,6 @@ if ($_POST){
         }else{
             echo 'Usando if: Usted presiono la opcion numero 3';
         }
-
-
 }
 
 ?>
