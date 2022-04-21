@@ -37,7 +37,6 @@
     // Si el post no esta vacio hacemos lo siguiente
     if ($_POST)
     {
-
         // recibimos el valor post
         $tabla = $_POST['boton'];
 
