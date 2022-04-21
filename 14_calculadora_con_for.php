@@ -9,7 +9,7 @@
 <body>
 
         <h3>Esta es tu calculadora en php con el uso de for</h3>
-        <form action="calculadora_con_for.php" method="post">
+        <form action="14_calculadora_con_for.php" method="post">
 
             <input type="submit" name="tabla" value="1">
             <input type="submit" name="tabla" value="2">
