@@ -18,7 +18,7 @@ if($_POST){         // Verificamos si el POST tiene datos
         }
     if ($valorA != $valorB) {
         echo "El valor de A no es igual al valor de B <br/>";
-        if($valorA < $valorB){
+        if($valorA < $valorB){                                          //ACA EL IF ANIDADO PORQUE ESTA DENTRO DE OTRO IF
             echo "El valor de A es menor que el de B<br/>";
         }     
     }
