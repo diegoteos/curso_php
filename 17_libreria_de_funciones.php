@@ -9,9 +9,9 @@
 <body>
     <center><h3>Libreria de funciones de php</h3>
 
-    <a href="https://www.php.net/manual/es/function.hash-init.php">LIBRERIA DE FUNCIONES YA CREADAS EN PHP</a><br><br>
+    <a href="https://www.php.net/manual/es/funcref.php" target="_blank">LIBRERIA DE FUNCIONES YA CREADAS EN PHP:</a><br><br>
 
-    <a href="https://www.php.net/manual/es/ref.math.php">FUNCIONES MATEMATICAS:</a></center>
+    <a href="https://www.php.net/manual/es/ref.math.php" target="_blank">FUNCIONES MATEMATICAS:</a></center>
 
 </body>
 </html>
