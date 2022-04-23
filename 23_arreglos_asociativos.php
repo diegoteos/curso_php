@@ -6,16 +6,15 @@
 
     # VEMOS EL INDICE Y SUS VALORES
     print_r($frutas);
+
+    # IMPRIMIMOS CON EL INDICE QUE DECLARAMOS
     echo '<br><br>'. $frutas['m'].'<br/>';
 
 
-    foreach($frutas as $indice =>&$valores) {
-
-        echo $indice.'<br/>';
-
+    # LEEMOS TODOS LOS ELEMENTOS CON EL CICLO FOREACH
+    foreach($frutas as $indice =>&$valor) {
+        
+        echo "El valor: $valor tiene el indice: $indice <br><br/>";
     }
-
-
-
 
 ?>
