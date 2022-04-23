@@ -2,7 +2,10 @@
      
      class persona
      {
-        public $nombre;   // propiedades...
+        public $nombre;         // propiedades...
+
+        private $edad;          // solo se puede acceder desde la clase que lo define
+        protected $altura;      // encapsulamiento solo se puede acceder mediante la misma clase y las clases heredadas 
 
         public function asignarNombre($nuevoNombre){  //acciones o metodos...
 
@@ -12,6 +15,12 @@
         public function imprimirNombre() {
 
             echo "Hola soy ".$this->nombre;
+        }
+
+        public function mostrarEdad() {
+
+            $this->edad = 20;
+            return $this->edad;
         }
      } 
 
@@ -25,6 +34,9 @@
      $objAlumno2->imprimirNombre(); 
 
      echo $objAlumno2->nombre; // imprimos una propiedad
+
+     echo $objAlumno2->nombre;
+     echo ' '.$objAlumno2->mostrarEdad();
 
 
 ?>
