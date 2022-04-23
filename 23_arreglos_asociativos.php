@@ -6,6 +6,16 @@
 
     # VEMOS EL INDICE Y SUS VALORES
     print_r($frutas);
-    echo '<br><br>'. $frutas['m'];
+    echo '<br><br>'. $frutas['m'].'<br/>';
+
+
+    foreach($frutas as $indice =>&$valores) {
+
+        echo $indice.'<br/>';
+
+    }
+
+
+
 
 ?>
