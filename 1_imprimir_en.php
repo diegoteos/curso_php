@@ -10,6 +10,6 @@ echo 'Para imprimir cadenas de texto se utiliza "echo" ó "print". <br><br />';
 
 echo 'echo vs print: Ambos son constructores de lenguaje que muestran cadenas de texto con diferencias algo sutiles. <br><br />';
 
-echo 'echo puede imprimir mas de una cadena separadas por coma, mientras que print solo imprime una.<br><br/>'
+echo 'echo puede imprimir mas de una cadena separadas por coma, mientras que print solo imprime una cadena.<br><br/>'
 
 ?>

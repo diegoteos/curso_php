@@ -45,6 +45,6 @@
 
      $objTrabajador->presentarseComoTrabajador();
 
- 
+  
 
 ?>
