@@ -17,7 +17,7 @@
             echo "Hola soy ".$this->nombre;
         }
 
-        public function mostrarEdad() {
+        public function mostrarEdad() { 
 
             $this->edad = 20;
             return $this->edad;
