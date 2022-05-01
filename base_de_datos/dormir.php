@@ -20,8 +20,10 @@ $NuevaFecha = date('H:i:s', $NuevaFecha);
 <body>
     <h4>Es hora de ir a dormir?</h4>
     <form action="dormir.php" method="post">
+
         <input type="timestamp" name="hora" value="<?php echo $NuevaFecha; ?>" value="24" id="">
-        <button type="submit">Consultar la hora</button>
+        <button type="submit">Enviar la hora</button>
+
     </form>
 </body>
 
@@ -30,15 +32,19 @@ $NuevaFecha = date('H:i:s', $NuevaFecha);
 
 <?php
 $am = '06:00:00';
+$doce = '12:00:00';
 $pm = '23:00:00';
+
 if (!empty($_POST['hora'])) {
     $hora = $_POST['hora'];
     if ($hora <= $am) {
         echo "Anda dormite, es de madrugada ya son las $hora";
         echo "<script> alert('Anda dormite, es de madrugada ya son las $hora');</script>";
-    } elseif (($hora >= $am) && ($hora <= $pm)) {
-        echo 'Es buena hora, hecha penca programando, apenas son las ' . $hora;
-    } elseif ($hora >= $pm) {
+    } elseif (($hora > $am) && ($hora <= $doce)) {
+        echo 'Gracias a Dios es de mañana, buena hora para programar ya que son las ' . $hora;
+    } elseif (($hora >= $doce) && ($hora <= $pm)) {
+        echo 'Es buena hora, hecha penca programando, son las ' . $hora;
+    } elseif ($hora > $pm) {
         echo "Ya es noche, anda dormite, ya son las $hora";
         echo "<script> alert('Ya es noche, anda dormite, ya son las $hora ');</script>";
     }
