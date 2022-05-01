@@ -20,10 +20,8 @@ $NuevaFecha = date('H:i:s', $NuevaFecha);
 <body>
     <h4>Es hora de ir a dormir?</h4>
     <form action="dormir.php" method="post">
-
         <input type="timestamp" name="hora" value="<?php echo $NuevaFecha; ?>" value="24" id="">
         <button type="submit">Consultar la hora</button>
-
     </form>
 </body>
 
