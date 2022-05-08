@@ -11,10 +11,10 @@ $usuario = "root";
 $contraseña = "";
 
 try {
-    $conexion = new PDO("mysql:host=$servidor;dbname=exp-prueba", $usuario, $contraseña);
+    $conexion = new PDO("mysql:host=$servidor;dbname=expertajes", $usuario, $contraseña);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "SELECT * FROM `01_30_noviembre_2020` WHERE `COL 17`= $telefono;";
+    $sql = "SELECT * FROM `exp` WHERE `COL 17`= $telefono;";
 
     //$sql = "SELECT * FROM `01_30_noviembre_2020`";
 
@@ -26,7 +26,7 @@ try {
    // print_r($resultado);
 
     foreach($resultado as $abonado) {
-        echo 'Nombres: ' . $abonado['COL 8']."<br/> Apellidos: ".$abonado['COL 9'] ." ". ' <br/>DPI: '.$abonado['COL 10']."<br> Nit:".$abonado['11'] .'<br/>';
+        echo 'Nombres: ' . $abonado['COL 8']."<br/> Apellidos: ".$abonado['COL 9'] ." ". ' <br/>DPI: '.$abonado['COL 10']."<br> Nit:".$abonado['11']."<br> Correo:".$abonado['13'] .'<br><br><br/>';
     }
     
 
