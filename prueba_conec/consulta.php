@@ -70,7 +70,7 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
         echo "Conexion erronea" . $error;
     }
 } elseif (isset($_POST['dpi']) && !empty($_POST['telefono']) || isset($_POST['telefono']) && !empty($_POST['dpi'])) {
-    echo 'Solo puede hacer una consulta, o de telefono o de DPI.';
+    echo '<script> alert ("Solo puede hacer una consulta, o de telefono o de DPI.");</script>';
 } else {
     echo "<br> <h1><center>Debe de ingresar una consulta para que se le muestre algun resultado.</center></h1>";
 }
