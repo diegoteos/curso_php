@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultar numero</title>
 </head>
+
 <body>
+    <h1>Ingresa el dato que quieres consultar</h1>
     <form action="consulta.php" method="post">
-        <input type="text" name="telefono" id="">
-        <input type="submit" value="Enviar dato">
+        <p>Telefono: </p>
+        <input type="number" name="telefono" id="">
+        <p>DPI:</p>
+        <input type="number" name="dpi" id="">
+        <br><br>
+        <input type="submit" value="Consultar">
     </form>
+    <br>
+
 </body>
+
 </html>
