@@ -1,10 +1,8 @@
 <?php
+
 $txtNombre = '';
 if ($_POST) {
-
     $txtNombre = (isset($_POST['txtNombre'])) ? $_POST['txtNombre'] : '';
-
-    
 }
 
 
@@ -21,7 +19,6 @@ if ($_POST) {
 </head>
 
 <body>
-
     <?php if ($_POST) { ?>
         <strong>Hola: </strong><?php echo $txtNombre; ?>
     <?php } ?>
