@@ -1,7 +1,8 @@
 <?php
+/*
+if (!empty($_POST['placa'])) {
+    $tipoPlaca = $_POST['placa'];
 
-if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
-    $telefono = $_POST['telefono'];
 
 
     $servidor = "localhost"; // 127.0.0.1
@@ -12,7 +13,8 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
         $conexion = new PDO("mysql:host=$servidor;dbname=expertajes", $usuario, $contraseña);
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "SELECT * FROM `exp` WHERE `COL 17`= $telefono;";
+        
+        $sql = "SELECT * FROM `exp` WHERE `COL 22` LIKE $tipoPlaca;";
 
 
         $sentencia = $conexion->prepare($sql);
@@ -35,8 +37,17 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
     } catch (PDOException $error) {
         echo "Conexion erronea" . $error;
     }
-} elseif (isset($_POST['dpi']) && empty($_POST['telefono'])) {
-    $dpi = $_POST['dpi'];
+}  elseif (isset($_POST['dpi']) && !empty($_POST['telefono']) || isset($_POST['telefono']) && !empty($_POST['dpi'])) {
+    echo '<script> alert ("Solo puede hacer una consulta, o de telefono o de DPI.");</script>';
+} else {
+    echo "<br> <h1><center>Debe de ingresar una consulta para que se le muestre algun resultado.</center></h1>";
+}
+
+*/
+
+if (!empty($_POST['tipoPlaca']) && !empty($_POST['placa'])) {
+    $tipo = $_POST['tipoPlaca'];
+    $placa = $_POST['placa'];
 
 
     $servidor = "localhost"; // 127.0.0.1
@@ -47,7 +58,8 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
         $conexion = new PDO("mysql:host=$servidor;dbname=expertajes", $usuario, $contraseña);
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "SELECT * FROM `exp` WHERE `COL 10`= $dpi;";
+        $sql = "SELECT * FROM `exp` WHERE `COL 21` = '$tipo' && `COL 22` = '$placa'";
+
 
         $sentencia = $conexion->prepare($sql);
         $sentencia->execute();
@@ -57,10 +69,11 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
         if (empty($resultado)) {
             echo "<br> <h1><center>No hay registros con los datos consultados.</center></h1><br><br />";
         } else {
-            foreach ($resultado as $persona) {
-                echo 'Nombres: ' . $persona['COL 8'] . "<br/> Apellidos: " . $persona['COL 9'] . " " . ' <br/>DPI: ' . $persona['COL 10'] . "<br> Nit:" . $persona['11'] . "<br> Correo:" . $persona['13'] . "<br> Departamento:" . $persona['17'] .  "<br> Municipio:" . $persona['18'] .  "<br> Dirección:" . $persona['19'] . '<br><br><br/>';
+            foreach ($resultado as $abonado) {
+                echo 'PLACAS: ' . $tipo . $placa .' <br/> Nombres: ' . $abonado['COL 8'] . "<br/> Apellidos: " . $abonado['COL 9'] . " " . ' <br/>DPI: ' . $abonado['COL 10'] . "<br> Nit:" . $abonado['11'] . "<br> Correo:" . $abonado['13'] . "<br> Departamento:" . $abonado['17'] .  "<br> Municipio:" . $abonado['18'] .  "<br> Dirección:" . $abonado['19'] .  "<br> Telefono:" . $abonado['16'] . '<br><br><br/>';
             }
         }
+
 
 
 
@@ -68,8 +81,10 @@ if (isset($_POST['telefono']) && empty($_POST['dpi'])) {
     } catch (PDOException $error) {
         echo "Conexion erronea" . $error;
     }
-} elseif (isset($_POST['dpi']) && !empty($_POST['telefono']) || isset($_POST['telefono']) && !empty($_POST['dpi'])) {
-    echo '<script> alert ("Solo puede hacer una consulta, o de telefono o de DPI.");</script>';
-} else {
-    echo "<br> <h1><center>Debe de ingresar una consulta para que se le muestre algun resultado.</center></h1>";
+}elseif (empty($_POST['tipoPlaca']) && empty($_POST['placa'])) {
+    echo "Debe llenar los dos campos requeridos";
+}elseif (!empty($_POST['placa']) && empty($_POST['tipoPlaca'])) {
+    echo "Debe de indicar el tipo de placa";
+}elseif (!empty($_POST['tipoPlaca']) && empty($_POST['placa'])) {
+    echo "Debe de llenar el numero de placa";
 }
