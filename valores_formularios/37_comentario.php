@@ -9,7 +9,7 @@ $chkhtml = "";
 $chkcss = "";
 
 $lsAnime = "";
-$txtComentario ="";
+$txtComentario = "";
 
 if ($_POST) {
     $txtNombre = (isset($_POST['txtNombre'])) ? $_POST['txtNombre'] : "";  // if ternario
@@ -21,8 +21,6 @@ if ($_POST) {
 
     $lsAnime = (isset($_POST['lsAnime'])) ? $_POST['lsAnime'] : "";
     $txtComentario = (isset($_POST['txtComentario'])) ? $_POST['txtComentario'] : "";
-
-    
 }
 
 
