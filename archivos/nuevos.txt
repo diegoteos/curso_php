@@ -1,0 +1,13 @@
+Hola Diego Teos, soy un archivo txt
+
+Por lo que no podemos llamar texto plano a un documento odt o doc, pues en el documento no solo se almacena el texto, sino su formato.
+
+Bien, ahora veamos lo que es un HTML. Aunque lo podamos abrir con el bloc de notas y podamos «leer» su contenido, no se puede considerar texto plano, pues no solo contiene texto, sino marcas que definen posición y formato (que puede ser enriquecido con la ayuda de los estilos CSS). Lo que sucede es que, al contrario que en un doc, todas las marcas de formato se representan con caracteres legibles (imprimibles), en lugar de con valores binarios (no imprimibles).
+
+Al usar caracteres imprimibles para definir el formato, aparece un problema. Estamos «reservando» determinados caracteres o combinaciones de caracteres para formatear el texto. ¿Y que pasa si queremos que nuestro texto incluya esos caracteres?
+
+Para solucionar ese problema, entra en juego una técnica que se llama «escapado de caracteres». HTML define unas secuencias de caracteres que se pueden usar para indicarle al navegador que queremos que muestre un carácter concreto, ignorando su posible significado.
+
+Por ejemplo, si estamos escribiendo un tutorial sobre HTML en HTML, que no es texto plano, y queremos escribir <pre>, no podremos escribirlo «tal cual», pues el navegador lo interpretará como una marca, en lugar de como texto. Por lo que tenemos que «escapar» los caracteres especiales para indicarle al navegador que no queremos que interprete esa parte como una marca HTML. Así que en lugar de escribir <pre>, escribimos su versión escapada &lt;pre&gt;. Algo tan sencillo como sustituir < por &lt; y > por &gt;.
+
+Esto es todo Hola otra vez ya vine y ya me voy 

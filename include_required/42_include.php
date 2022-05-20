@@ -8,7 +8,8 @@
 </head>
 <body>
 <?php
-include '42_1_include.php';
+include_once '42_1_include.php';
+include_once '43_1_require.php';
 ?>
 </body>
 </html>
