@@ -1,3 +1,17 @@
+<?php
+
+if($_POST){
+    if(($_POST['usuario']=="develoteca") && ($_POST['contraseña']=="12345")){
+
+            echo "Logueado, ok.";
+            header("location:index.php");
+
+    }else {
+        echo "<script>alert('Error al ingresar tus datos');</script>";
+    }
+
+}
+?>
 <!doctype html>
 <html lang="en">
 
