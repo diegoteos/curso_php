@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if (isset($_SESSION['usuario']) != "develoteca"){
+        header("location:login.php");
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 

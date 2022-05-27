@@ -1,15 +1,16 @@
 <?php
+session_start();
+if ($_POST) {
+    if (($_POST['usuario'] == "develoteca") && ($_POST['contraseña'] == "12345")) {
 
-if($_POST){
-    if(($_POST['usuario']=="develoteca") && ($_POST['contraseña']=="12345")){
+        $_SESSION['usuario'] = "develoteca";
 
-            echo "Logueado, ok.";
-            header("location:index.php");
+        header("location:index.php");
 
-    }else {
+
+    } else {
         echo "<script>alert('Error al ingresar tus datos');</script>";
     }
-
 }
 ?>
 <!doctype html>
