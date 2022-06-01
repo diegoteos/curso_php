@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    if (isset($_SESSION['usuario']) != "develoteca"){
+    if (isset($_SESSION['usuario']) != "diego"){
         header("location:login.php");
 
     }
