@@ -16,10 +16,6 @@ $proyectos = $objConexion->consultar("SELECT * FROM `proyectos`");
     </div>
 </div>
 
-
-
-
-
 <div class="row row-cols-1 row-cols-md-2 g-4">
     <?php foreach ($proyectos as $proyecto) { ?>
         <div class="col">
