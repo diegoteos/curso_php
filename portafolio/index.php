@@ -6,6 +6,7 @@ include_once 'conexion.php';
 $objConexion = new conexion();
 $proyectos = $objConexion->consultar("SELECT * FROM `proyectos`");
 ?>
+
 <div class="p-5 bg-light">
     <div class="container">
         <h1 class="display-3">Bienvenidos</h1>
@@ -35,3 +36,4 @@ $proyectos = $objConexion->consultar("SELECT * FROM `proyectos`");
 <?php
 include_once 'pie.php';
 ?>
+
